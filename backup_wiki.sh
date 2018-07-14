@@ -18,3 +18,5 @@ ls -t /tmp/backups_wiki/ | tail -n +11 | xargs -I {} rm {}
 
 # Compress and send by email
 tar -czf backup_wiki_`date +%Y%m%d`.gz backup_wiki_`date +%Y%m%d` | uuencode backup_wiki_`date +%Y%m%d`.gz | mail -r Backupmachinator -s "Department Wiki Backup" droijals@gmail.com
+
+
