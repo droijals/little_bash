@@ -1,4 +1,7 @@
 #!/bin/bash
+
+### Script for my son Jan, and his hard flute school-training :)
+
 clear
 modprobe pcspkr
 clear
