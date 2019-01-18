@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ### Script for my son Jan, and his hard flute school-training :)
+### Maybe need sudo or root ownership, 'cause modprobe is in /sbin
 
 clear
 modprobe pcspkr
