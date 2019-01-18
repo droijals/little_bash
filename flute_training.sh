@@ -2,6 +2,7 @@
 
 ### Script for my son Jan, and his hard flute school-training :)
 ### Maybe need sudo or root ownership, 'cause modprobe is in /sbin
+### or add your user to audio group: sudo usermod -a -G audio <your_user>
 
 clear
 modprobe pcspkr
