@@ -21,6 +21,8 @@ echo -e "(3-5 seconds - EXPERT Level)";
 echo -e "(5-10 seconds - INTERMEDIATE Level)";
 echo -e "(+10 seconds - You need more practice)";
 echo
+echo -e "(CTRL-C at any moment to quit)";
+echo
 echo -e "HOW MUCH SECONDS BETWEEN NOTES? (Enter the number of seconds and press ENTER)"; read seconds;
 clear
 
@@ -70,4 +72,3 @@ do
 sleep $seconds;
 clear
 done
-echo
