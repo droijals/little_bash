@@ -4,7 +4,8 @@
 ### Execute as root or with sudo permissions 'cause modprobe need it. 
 
 ### Enable your beep with: (sudo) modprobe pcspkr 
-### and you can enable it permanently removing pcspkr with: sudo vi /etc/modprobe.d/blacklist.conf
+### and you can enable it permanently removing pcspkr from modprobe blacklist (if needed)
+### editing conf file: sudo vi /etc/modprobe.d/blacklist.conf
 
 ### A note shows (and sounds) at the top of your screen, and you will have 
 ### your selected number of seconds in order to reproduce it
