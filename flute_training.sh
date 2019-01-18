@@ -1,8 +1,10 @@
 #!/bin/bash
 
 ### Script for my son Jan, and his hard flute school-training :)
-### Maybe need sudo or root ownership, 'cause modprobe is in /sbin
-### or add your user to audio group: sudo usermod -a -G audio <your_user>
+### Execute as root or with sudo permissions 'cause modprobe need it. 
+
+### Enable your beep with: (sudo) modprobe pcspkr 
+### and you can enable it permanently removing pcspkr with: sudo vi /etc/modprobe.d/blacklist.conf
 
 ### A note shows (and sounds) at the top of your screen, and you will have 
 ### your selected number of seconds in order to reproduce it
