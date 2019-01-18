@@ -10,6 +10,7 @@
 ### improve your flute skills. Good luck! :)
 
 clear
+modprobe pcspkr
 echo -e "FLUTE's LITTLE TRAINING PROGRAM";
 echo -e "*******************************";
 echo
