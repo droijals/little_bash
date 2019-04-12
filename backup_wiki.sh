@@ -2,8 +2,7 @@
 #!/bin/bash
 
 ### Backup of our IT Dept. Wiki 
-### (Wiki.js - https://wiki.js.org/)
-
+### (based on Wiki.js - https://wiki.js.org/)
 
 # Destination path
 cd /tmp/backups_wiki
@@ -18,5 +17,3 @@ ls -t /tmp/backups_wiki/ | tail -n +11 | xargs -I {} rm {}
 
 # Compress and send by email
 tar -czf backup_wiki_`date +%Y%m%d`.gz backup_wiki_`date +%Y%m%d` | uuencode backup_wiki_`date +%Y%m%d`.gz | mail -r Backupmachinator -s "Department Wiki Backup" droijals@gmail.com
-
-
