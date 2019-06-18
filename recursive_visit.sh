@@ -1,7 +1,7 @@
 #####
 #
 # Aquest script el que fa és fer un ssh a cada server definit a l'array de la variable
-# farm_hosts, i des de dins de cada lxc-host fa un ssh a cadascun dels diferents
+# farm_hosts, i des de dins de cada contenidor lxc fa un ssh a cadascun dels diferents
 # contenidors (LXC) que siguin del tipus tomate (fake name obviosuly) i no siguin templates i restarteja
 # el supervisor. Es pot modificar per connectar-se i executar qualsevol altre tipus 
 # de tasca en aquests contenidors, obviament.
