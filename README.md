@@ -1,2 +1,2 @@
 # little_bash
-Petits scripts (shell mainly) que ajuden (...)
+Tiny bash scripts for helping (...)
