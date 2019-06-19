@@ -1,7 +1,6 @@
 
 #!/bin/bash
 
-### Backup of our IT Dept. Wiki 
 ### (based on Wiki.js - https://wiki.js.org/)
 
 # Destination path
@@ -16,4 +15,4 @@ mongodump --host localhost --db wiki --port 27017 --out backup_wiki_`date +%Y%m%
 ls -t /tmp/backups_wiki/ | tail -n +11 | xargs -I {} rm {}
 
 # Compress and send by email
-tar -czf backup_wiki_`date +%Y%m%d`.gz backup_wiki_`date +%Y%m%d` | uuencode backup_wiki_`date +%Y%m%d`.gz | mail -r Backupmachinator -s "Department Wiki Backup" droijals@gmail.com
+tar -czf backup_wiki_`date +%Y%m%d`.gz backup_wiki_`date +%Y%m%d` | uuencode backup_wiki_`date +%Y%m%d`.gz | mail -r Backupmachinator -s "Wiki Backup" YOUR_EMAIL@gmail.com
